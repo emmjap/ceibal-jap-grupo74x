@@ -5,20 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>iniciar Sesion</title>
+    <title>Iniciar Sesión</title>
+    <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
 </head>
 <body>
         
         
     <nav class="navegacion">
-            <div>
-                    <form action="home.html">
-                           <input type="image" src="imagenes/icono.png" alt="icono de la pagina" width="100" height="100">
-                        </form>
-                        </div> 
         <ul> 
       
-        <li>  <a href="CategoriaJ.html">Categoria de Juegos</a>
+        <li>  <a href="Listadojuegos.html">Categoria de Juegos</a>
 
 <div> 
     
@@ -42,7 +38,7 @@
         <div>
                 <ul>
                         <li> <a href="#">Problemas para descargar o Comprar</a></li>
-                        <li> <a href="contacto.html">contacto</a> </li>
+                        <li> <a href="contacto.html">Contacto</a> </li>
                 </ul>
             </div>
     </li> 
@@ -52,7 +48,7 @@
     
         <div>
             <ul>
-                    <li> <a href="login.html">Iniciar Session</a></li>
+                    <li> <a href="login.html">Iniciar Sesión</a></li>
                     <li> <a href="Registrarse.html">Registrarse</a> </li>
             </ul>
         </div>
@@ -80,25 +76,29 @@
         <input type="text" name="uname" required>
     
         <label for="psw"><b>Contraseña</b></label>
-        <input type="password" placeholder="Contraseña" name="psw" required>
-          
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Recordarme
-        </label>
-      </div>
+        <input type="password" placeholder="Contraseña" name="psw" required><span class="psw"><a href="#">olvido su Contraseña? </a></span>
+         
+    </div>
+
+    <div>
+    <label>
+        <input type="checkbox" checked="checked" name="remember"> Recordarme
+      </label>
     
-      <di>
-          <br>
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
+    </div>
+
+
+        <button type="submit">Iniciar</button>
+
+       
+        
+    
 
 <form action="Registrarse.html">
     <br>
     <br>
 <label> si todavia no  estas registrado click aqui </label>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Registrarse</button>
+    <button onclick="continue">Registrarse</button>
 
 
 
