@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/home.css">
+    <link rel="stylesheet" href="../estilos/formulario.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../JavaScript/main.js"></script>
     <title>Registrarse</title>
 </head>
 
 <body>
-    <script src="/ENTREGA_CSS/JavaScript/main.js"></script>
     <header>
         <div class="contenedor">
         <div class="logo">
-                <img src="imagenes/icono.png" height="50" width ="50" alt="">
+                <img src="../imagenes/icono.png" height="50" width ="50" alt="">
+
         </div>
         <nav class="menu">
 				<ul>
-                    <li><a href="../home.html">Categoria juegos</a></li>
+                    <li><a href="../home.html">Inicio</a>
+                    
+                        <ul>
+                            <li><a href="../Pagina_de_juegos/Categoria_Juegos.html">Todos Los juegos</a></li>
+                    </ul>
+                    </li>
                     <li><a href="#">Soporte Tecnico</a>
                     <ul>
                        <li><a href="../contacto.html">Contacto</a></li>
@@ -27,55 +33,58 @@
 					<li><a href="../sobre_nosotros.html">Sobre Nosotros</a></li>
                     <li><a href="#">Acceder</a>
                     <ul>
-                        <li><a href="Acceder_usuario/login.html">Login</a></li>
-                        <li><a href="Acceder_usuario/Registrarse.html">Registrarse</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="Registrarse.html">Registrarse</a></li>
                     </ul>
                     </li>
 				</ul>
             </nav>
-
-        </div>
-    </header>
-
-<section>
-<form action="">
-        
-
-            <div>
-                    <label for="nombre"> ingrese su nombre: </label>
-                    <input type="text" placeholder="maximo 30 caracteres" maxlength="30" name="nombre" id="nombre" required pattern="[A-Za-z]">  
-            <br>
-                <div>
-        <br>
-        
-                 <label for="apellido"> ingrese su apellido: </label>
-                  <input type="text" placeholder=" maximo 30 caracteres" maxlength="30" name="apellido" id="apellido" pattern="[A-Za-z]" required>
-                
-                </div>
-            </div>
-<br>
-<div>
-    <label for="Correo">E-Mail</label>
- <input type="email" placeholder=" Juan@dominio.com" maxlength="30" name="email" id="Correo"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
 </div>
- <br>
-<div>    
-    <label for="pass">contraseña: </label>
-  <input type="password" placeholder=" maximo 15 caracteres" maxlength="15" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos 8 o más caracteres incluidos un número ,una letra mayúscula" required>
-</div>
-<br>
-<div>
-    <label for="contra">repetir contraseña</label>
- <input type="password" placeholder=" maximo 15 caracteres" maxlength="15"id="contra" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos 8 o más caracteres incluidos un número ,una letra mayúscula" required>
-</div>
-<br>
+                <div class="contenedor-formulario">
+		<div class="wrap">
 
-<input type="radio" name="" id="acepto"><label for="acepto">Acepto termino de condiciones</label>
-<br>
-<div>
-    <br>
-<input type="submit" value="Registrarme" />
-</div>
-</form>
+                <h5>Registrarse</h5>
+
+			<form action="" class="formulario" name="formulario_registro" method="get">
+				<div>
+					<div class="input-group">
+						<input type="text" id="nombre" name="nombre">
+						<label class="label" for="nombre">Nombre:</label>
+					</div>
+					<div class="input-group">
+						<input type="email" id="correo" name="correo">
+						<label class="label" for="correo">Correo:</label>
+					</div>
+					<div class="input-group">
+						<input type="password" id="pass" name="pass">
+						<label class="label" for="pass">Contraseña:</label>
+					</div>
+					<div class="input-group">
+						<input type="password" id="pass2" name="pass2">
+						<label class="label" for="pass2">Repetir Contraseña:</label>
+					</div>
+					
+					<div class="input-group checkbox">
+						<input type="checkbox" name="terminos" id="terminos" value="true">
+						<label for="terminos">Acepto los Terminos y Condiciones</label>
+					</div>
+						
+					<input type="submit" id="btn-submit" value="Enviar">
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/home.css">
+    <link rel="stylesheet" href="../estilos/formulario.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../JavaScript/main.js"></script>
 <title>Iniciar Sesión</title>
 
 </head>
 <body>
-        
-        
-    <script src="/ENTREGA_CSS/JavaScript/main.js"></script>
     <header>
         <div class="contenedor">
         <div class="logo">
-                <img src="imagenes/icono.png" height="50" width ="50" alt="">
+                <img src="../imagenes/icono.png" height="50" width ="50" alt="">
 
         </div>
         <nav class="menu">
 				<ul>
-                    <li><a href="../home.html">Categoria juegos</a></li>
+                    <li><a href="../home.html">Inicio</a>
+                    
+                        <ul>
+                            <li><a href="../Pagina_de_juegos/Categoria_Juegos.html">Todos Los juegos</a></li>
+                    </ul>
+                    </li>
                     <li><a href="#">Soporte Tecnico</a>
                     <ul>
                        <li><a href="../contacto.html">Contacto</a></li>
@@ -40,38 +44,45 @@
         </div>
     </header>
 
-    <div>
-        <label for="uname"><b>Usuario</b></label>
-        <input type="text" name="uname" required>
-    
-        <label for="psw"><b>Contraseña</b></label>
-        <input type="password" placeholder="Contraseña" name="psw" required><span class="psw"><a href="#">olvido su Contraseña? </a></span>
-         
+    <div class="contenedor-formulario">
+		<div class="wrap">
+
+            <h5>Iniciar Sesión</h5>
+            <br>
+
+			<form action="" class="formulario" name="formulario_registro" method="get">
+				<div>
+					<div class="input-group">
+						<input type="text" id="nombre" name="nombre">
+						<label class="label" for="nombre">Usuario:</label>
+					</div>
+					<div class="input-group">
+						<input type="email" id="correo" name="correo">
+						<label class="label" for="correo">E-mail:</label>
+                    </div>
+                    <div class="input-group">
+						<input type="password" id="pass" name="pass">
+						<label class="label" for="pass">Contraseña:</label>
+					</div>
+                    
+                    <a class="a_Registro" href="Registrarse.html">si todavia no esta registrado click aqui</a>
+                    
+
+					<input type="submit" id="btn-submit" value="Enviar">
+				</div>
+			</form>
+		</div>
+	
     </div>
-
-    <div>
-    <label>
-        <input type="checkbox" checked="checked" name="remember"> Recordarme
-      </label>
-    
-    </div>
-
-
-        <button type="submit">Iniciar</button>
-
        
         
     
 
-<form action="Registrarse.html">
-    <br>
-    <br>
-<label> si todavia no  estas registrado click aqui </label>
-    <button onclick="continue">Registrarse</button>
 
 
 
-</form>
+
+
 
 
 

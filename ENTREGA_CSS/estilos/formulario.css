@@ -16,6 +16,7 @@
     max-width: 500px;
     padding: 40px;
     margin: auto;
+    margin-bottom: 100px;
     background: #fff;
     box-shadow: 0px 0px 3px grey; }
   
@@ -33,16 +34,31 @@ color: #303F9F;
 
 }
 
+.a_Registro{
+
+  color:#1976D2;
+  font-size: 20px;
+  
+
+}
+
   .contenedor-formulario {
     width: 100%;
     color: #f2f2f2;
-    padding: 50px; }
+    padding: 50px;
+    padding-bottom: 100px;
+  }
+
+
     .contenedor-formulario .formulario {
       width: 100%;
-      margin: auto; }
+      margin: auto; 
+    
+    }
       .contenedor-formulario .formulario .input-group {
         position: relative;
-        margin-bottom: 32px; }
+        margin-bottom: 32px;
+       }
         .contenedor-formulario .formulario .input-group input[type="text"],
         .contenedor-formulario .formulario .input-group input[type="email"],
         .contenedor-formulario .formulario .input-group input[type="password"] {
@@ -55,6 +71,8 @@ color: #303F9F;
           background: none;
           border: none;
           border-bottom: 2px solid #BBDEFB; }
+
+
           .contenedor-formulario .formulario .input-group input[type="text"]:focus, 
           .contenedor-formulario .formulario .input-group input[type="text"]:active,
           .contenedor-formulario .formulario .input-group input[type="email"]:focus,
@@ -74,12 +92,16 @@ color: #303F9F;
             line-height: 16px;
             position: absolute;
             top: 16px;
-            left: 0; }
+            left: 0; 
+          }
+
+
             .contenedor-formulario .formulario .input-group label.label.active {
               top: -12px;
               font-size: 12px;
               line-height: 12px;
-              color: #B6B6B6; }
+              color: #B6B6B6; 
+            }
         .contenedor-formulario .formulario .input-group.checkbox label, .contenedor-formulario .formulario .input-group.radio label {
           display: inline-block;
           cursor: pointer;
@@ -90,9 +112,13 @@ color: #303F9F;
           border-radius: 3px;
           -webkit-transition: all 0.3s ease;
           -o-transition: all 0.3s ease;
-          transition: all 0.3s ease; }
+          transition: all 0.3s ease; 
+        }
+
+
           .contenedor-formulario .formulario .input-group.checkbox label:hover, .contenedor-formulario .formulario .input-group.radio label:hover {
-            background: #bbdefb; }
+            background: #bbdefb; 
+          }
           .contenedor-formulario .formulario .input-group.checkbox label:before, .contenedor-formulario .formulario .input-group.radio label:before {
             content: "";
             display: inline-block;
@@ -102,37 +128,54 @@ color: #303F9F;
             left: 15px;
             border-radius: 50%;
             background: none;
-            border: 2px solid #303F9F; }
+            border: 2px solid #303F9F; 
+          
+          }
         .contenedor-formulario .formulario .input-group.error label {
-          color: #D32F2F; }
+          color: #D32F2F; 
+        }
           .contenedor-formulario .formulario .input-group.error label:hover {
-            background: rgba(211, 47, 47, 0.2); }
+            background: rgba(211, 47, 47, 0.2);
+           }
           .contenedor-formulario .formulario .input-group.error label:before {
-            border: 2px solid #D32F2F; }
+            border: 2px solid #D32F2F; 
+          }
         .contenedor-formulario .formulario .input-group.radio input[type="radio"] {
-          display: none; }
+          display: none;
+        
+        }
           .contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label:before {
-            display: none; }
+            display: none;
+          
+          }
             /* el input del tipo radio cuando este seleccionado
             ignorar los estilos del label */
           .contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label {
             padding: 5px 15px;
             background: #303F9F;
             border-radius: 2px;
-            color: #f2f2f2; }
+            color: #f2f2f2;
+           }
            
         .contenedor-formulario .formulario .input-group.checkbox label:before {
-          border-radius: 3px; }
+          border-radius: 3px; 
+        }
           /*  lo que estamos haciendo es que antes que sea seleccionado ocultarle los estilos con el display none osea 
             sacar el circulo y cuadrado */
         .contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"] {
-          display: none; }
+          display: none; 
+        }
+
           .contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label:before {
-            display: none; }
+            display: none; 
+          }
+
           .contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label {
             background: #303F9F;
             color: #f2f2f2;
-            padding: 5px 15px; }
+            padding: 5px 15px;
+          
+          }
       .contenedor-formulario .formulario input[type="submit"] {
         background: #303F9F;
         border-radius: 1px;
@@ -146,6 +189,10 @@ color: #303F9F;
         width: 100%;
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
+        transition: all 0.3s ease;
+      
+      }
         .contenedor-formulario .formulario input[type="submit"]:hover {
-          background: #1976D2; }
+          background: #1976D2; 
+        
+        }
