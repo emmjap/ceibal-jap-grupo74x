@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacto</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/formulario.css">
     <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="JavaScript/main.js"></script>
 </head>
 <body>
-    <script src="/ENTREGA_CSS/JavaScript/main.js"></script>
+    
     <header>
         <div class="contenedor">
         <div class="logo">
@@ -18,7 +21,12 @@
         </div>
         <nav class="menu">
 				<ul>
-                    <li><a href="home.html">Categoria juegos</a></li>
+                    <li><a href="home.html">Inicio</a>
+                        <ul>
+                                <li><a href="Pagina_de_juegos/Categoria_Juegos.html">Todos Los juegos</a></li>
+                        </ul>
+                    
+                    </li>
                     <li><a href="#">Soporte Tecnico</a>
                     <ul>
                        <li><a href="contacto.html">Contacto</a></li>
@@ -36,19 +44,42 @@
         </div>
     </header>
 
-    <form action="">
-    <div>
-        <label for="Correo">E-mail:</label>
-     <input type="email" placeholder=" Juan@dominio.com" maxlength="30" name="email" id="Correo"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="No cumple con el formato que deberia tener un E-mail" >
-    </div>
-    <div>
-            <label for="nombre"> Ingrese su nombre completo </label>
-            <input type="text" placeholder="maximo 30 caracteres" maxlength="30" name="nombre" id="nombre">  
-    <br>
-    </div>
-    <div>
-        <label for="mensaje_contacto"></label>
-        <textarea name="" id="mensaje_contacto" cols="30" rows="10" title="Deje su mensaje aquí"></textarea>
+    <div class="contenedor-formulario">
+		<div class="wrap">
+
+            <h5>Contactenos</h5>
+            <br>
+
+			<form action="" class="formulario" name="formulario_registro" method="get">
+				<div>
+					<div class="input-group">
+						<input type="text" id="nombre" name="nombre">
+						<label class="label" for="nombre">Nombre Completo:</label>
+					</div>
+					<div class="input-group">
+						<input type="email" id="correo" name="correo">
+						<label class="label" for="correo">E-mail:</label>
+                    </div>
+                    <br>
+                    <p>Deje su mensaje aqui </p>
+                    <br>
+					<div class="input-group">
+						<textarea name="" id="mensaje_contacto" cols="50" rows="10" title="Deje su mensaje aquí">
+                    
+                        </textarea>
+                        
+					</div>
+					<div class="input-group checkbox">
+						<input type="checkbox" name="terminos" id="terminos" value="true">
+						<label for="terminos">Acepto los Terminos y Condiciones</label>
+					</div>
+						
+					<input type="submit" id="btn-submit" value="Enviar">
+				</div>
+			</form>
+		</div>
+	</div>
+        
     </div>
             </form>
 </body>
