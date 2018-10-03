@@ -1,0 +1,145 @@
+
+
+.contenedor{
+
+
+  /*que ocupe todo el tamañano en dispositivos pequeños*/
+  width: 95%;
+  max-width:1000px;
+  margin:auto;
+  background-image: url("icono.png");
+  
+  }
+  
+  .Contenedor_Lista{
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  
+  
+  }
+    
+    
+    .Contenedor_Lista .imagenes_juegos{
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    
+  .titulo_h3{
+  font-size: 2em;
+  color: #1798af;
+  
+  }
+  
+  
+  
+  .imagenes {
+  
+    width: 100%;
+    
+  
+  }
+  
+  .titulo_juego{
+  
+  font-size:1em;
+  }
+  
+  
+  
+
+  .logo {
+    background:gray;}
+
+  
+header nav {
+    background:#494949;
+    margin-bottom:10px;
+}
+
+header nav li a {
+    background-color:#494949;
+    color: #fff;
+    text-decoration:none;
+    padding:10px 15px ;
+    display:block;
+     
+    }
+
+header nav ul {
+
+    list-style:none;
+    overflow: hidden; }
+
+
+    header nav ul li {
+        float: left;
+    }
+
+header nav ul li a {
+
+    display: block;
+    padding:20px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+header nav ul li a:hover{
+   background:#a8acad;
+
+}
+
+.menu > li{
+    float: left;
+
+}
+
+.menu li ul {
+    display: none;
+position: absolute;
+min-width: 140px;
+}
+
+.menu li:hover >ul {
+    display:block;
+}
+
+.menu li ul li {
+    position: relative;
+}
+.menu li ul li ul {
+    right:-140px;
+    top:0px;
+}
+/*esta es la clase que se usa en el javascript*/
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	max-width:1000px;
+    width:100%;
+    /* box-shadow:0px 4px 3px rgba(0,0,0,.5); */
+}
+
+.contenedor .Contenedor_Lista .imagenes_juegos input[type="image"] {
+
+  height: 200px;
+  width: 200px;
+}
+
+
+
+
+
+  
+
+
+
