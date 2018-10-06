@@ -1,6 +1,6 @@
 * {box-sizing:border-box;
     margin: 0px;
-    /* padding:0px; */
+    padding:0px;
     -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -10,20 +10,11 @@
     body{
     
       
-      /* margin-left: 60px; */
+      margin-left: 60px;
       position: relative;
       top: auto;
-      left: 250;
-  
-      background: #e2e2e2;
-      background: -moz-linear-gradient(top, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(21%, #2c2c2c), color-stop(82%, #dbdbdb), color-stop(90%, #d1d1d1), color-stop(99%, #[object Object]), color-stop(100%, #fefefe));
-      background: -webkit-linear-gradient(top, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-      background: -o-linear-gradient(top, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-      background: -ms-linear-gradient(top, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-      background: linear-gradient(to bottom, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
-    }
+      left: 20px;
+      background:#2196F3;
     
     }
     .contenedor_principal{
@@ -47,6 +38,9 @@
         width: 920px;
         height: 220px;
       margin: auto;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    
       
     }
     
@@ -126,7 +120,7 @@
       clear: both;
       height:300px;
         float: left;
-      margin: 250 0px 0px 0px;
+      margin: 20px 0px 0px 0px;
       padding-bottom:10px;
         
     }
@@ -174,14 +168,14 @@
       grid-template-columns: auto auto auto;
       grid-gap: 10px;
       background-color: #2196F3;
-      padding:0 0 0 250;
+      padding:0 0 0 20px;
      
         }
         .Contenedor_Lista > .imagenes_juegos{
         
           background-color: rgba(255, 255, 255, 0.8);
           text-align: center;
-          padding: 250 0;
+          padding: 20px 0;
           font-size: 10px;
           
         }
@@ -266,7 +260,7 @@
     header nav ul li a {
     
         display: block;
-        padding:250;
+        padding:20px;
         color: #fff;
         text-decoration: none;
     
@@ -309,53 +303,32 @@
         width:100%;
         /* box-shadow:0px 4px 3px rgba(0,0,0,.5); */
     }
-    .contenedor{
-        /* display:flex; */
-        flex-direction: column;
-        height: 600;
-        background-color: whitesmoke;
-}
-    .contenedor .contenedor-juego{
-        display: flex;
-        justify-content: space-between;
-    
-    }
-    .contenedor-juego{
-        /* margin: 10px; */
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-        background-color: #e3e4e4;
-    }
-    
-    .contenedor .imagenes_juegos{
-            display: flex;
-            flex-direction: column;
-            background-color:white;
-    }
-            
-           .contenedor > .imagenes_juegos {
-                background-color: #f1f1f1;
-                width: 100px;
-                margin: 10px;
-                text-align: center;
-                line-height: 75px;
-                font-size: 30px;
-              }
-              .imagenes_juegos{
-                  justify-content:space-between;
-                  width: 160px;
-                  height: 250px;
-              }
 
-              /* .hr{
-                height: 20px;
-                width: 50px;
-                border-width: 2px;
-                border-top-width: 2px;
-                border-right-width: 2px;
-                border-bottom-width: 2px;
-                border-left-width: 2px;
-                background-color: black;
-              }
-       */
+    #circulo {
+        height: 100px;
+        width: 100px;
+        display: table-cell;
+        text-align: center;
+        font-size:36px;
+        vertical-align: middle;
+        border-radius: 50%;
+        background: #1976D2;
+      }
+
+      .image {
+        width:200px;
+        height:200px;
+        border-radius:100px;
+        border:5px solid #666;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 38px;
+        height: 1px;
+      }
+      
+      .image {
+        flex-grow: 1;
+        height: 100%;
+      }
