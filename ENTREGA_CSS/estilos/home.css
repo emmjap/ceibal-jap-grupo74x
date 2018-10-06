@@ -9,11 +9,11 @@ padding:0px;
 
 html{
 
-  
-  margin-left: 40px;
+  margin-right: 40px;
+    margin-left: 40px;
   position: relative;
   top: auto;
-  left: 20px;
+ 
   background:#2196F3;
 
 }
@@ -139,8 +139,6 @@ html{
 }
 
 
-
-
 .contenedor_menu{
 
   width: 1000px;
@@ -155,8 +153,8 @@ html{
   
 
   .Contenedor_Lista .imagenes_juegos input[type="image"] {
-    width: 110px;
-    height: 110px;
+    width: 124px;
+    height: 180px;
   }
 
 
@@ -166,7 +164,7 @@ float: left;
 clear: both;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 10px;
+  grid-gap: 20px;
   background-color: #2196F3;
   padding:0 0 0 20px;
  
@@ -175,20 +173,20 @@ clear: both;
     
       background-color: rgba(255, 255, 255, 0.8);
       text-align: center;
-      padding: 20px 0;
       font-size: 10px;
       
     }
 
     .imagenes_juegos{
-      height: 110px;
-      width: 110px;
+      width: 150px;
+      height: 220px;
+      text-align: center;
       background: #1798af;
       grid-row-start: 1;
       grid-row-end: 3;
     }
   
-
+.imagenes_juegos
 
 
     .Contenedor_Lista > div{
@@ -206,6 +204,9 @@ clear: both;
   font-size: 2em;
   color: #1798af;
   background: #a8acad;
+  margin-top: 20px;
+  margin-bottom: 25px;
+
   
   }
   
@@ -217,16 +218,7 @@ clear: both;
     
   
   }
-  
-  .titulo_juego{
-    float: left;
-    clear: both;
-  font-size:10px;
-  text-align: center;
-color:back; 
-}
-  
-  
+    
   /*header Dinamico*/
 
   .logo {
@@ -311,5 +303,10 @@ footer {
   height:200px;
   background-color:red;
 }
-
+ .contenido_extra{
+  background-color: lightblue;
+  width: 200px;
+  height: 290px;
+  overflow: scroll;
+ }
 
