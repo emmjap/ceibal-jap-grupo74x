@@ -8,9 +8,11 @@
     }
     
     body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-      
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        
+    
+
       margin-left: 0px;
       /* position: relative; */
       top: auto;
@@ -23,7 +25,7 @@
       background: -ms-linear-gradient(top, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
       background: linear-gradient(to bottom, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
-    }
+    
     
     }
     .contenedor_principal{
@@ -313,38 +315,8 @@
         /* box-shadow:0px 4px 3px rgba(0,0,0,.5); */
     }
 
-    #circulo {
-        /* height: 100px;
-        width: 100px;
-        display: table-cell;
-
-        /* text-align: center; */
-        /* font-size:36px; */
-        /* vertical-align: auto; */ 
-        border-radius: 20%;
-        background: #e2e2e2;
-        background: -moz-linear-gradient(top, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(21%, #2c2c2c), color-stop(82%, #dbdbdb), color-stop(90%, #d1d1d1), color-stop(99%, #[object Object]), color-stop(100%, #fefefe));
-        background: -webkit-linear-gradient(top, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-        background: -o-linear-gradient(top, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-        background: -ms-linear-gradient(top, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-        background: linear-gradient(to bottom, #e2e2e2 0%, #2c2c2c 21%, #dbdbdb 82%, #d1d1d1 90%, #[object Object] 99%, #fefefe 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
-    }
-
-      .image {
-        width:200px;
-        height:150px;
-        border-radius:100px;
-        border:10px solid rgb(224, 219, 219);
-      }
-    
-      .parrafo{
-        text-align:center;
-        margin-right: 10px;
-        display: inline-block;
-        }
-    .company-header{
-      display: flex;
-      margin-top: 8%;
-    }
+    .imagenesdk3 img{
+    margin-right: 25px;
+   height: 250px;
+   width: 300px;
+}
