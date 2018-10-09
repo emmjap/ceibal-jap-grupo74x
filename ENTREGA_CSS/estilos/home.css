@@ -284,6 +284,8 @@ footer {
   background-color:#1b353f;
   float: left;
 }
+
+/*estilos de la zona del contenido extra donde es para noticias y cosas extras*/
  .contenido_extra{
   background-color: lightblue;
   width: 260px;
@@ -346,6 +348,7 @@ footer {
   padding: 20px;
 }
 
+/*estos son los estilos de todos los botones de la pagina*/
 
 .btn_home{
   height:50px;
@@ -359,6 +362,7 @@ border:none;
   background-color: #34b5aa;
 }
 
+/*estilos de las paginas de cada juego */
 
 .imagenesdk3 img{
   margin-right: 25px;
@@ -372,7 +376,6 @@ border:none;
  height: 250px;
  width: 300px;
 }
-
 
 .image {
   width:200px;
