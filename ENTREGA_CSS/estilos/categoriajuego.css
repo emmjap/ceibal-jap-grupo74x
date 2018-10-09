@@ -19,7 +19,7 @@
     }
     
     .contenedor .imagenes_juegos{
-            display: flex;
+         
             flex-direction: column;
             background-color:white;
     }
