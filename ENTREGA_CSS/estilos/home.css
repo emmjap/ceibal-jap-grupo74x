@@ -356,3 +356,35 @@ border:none;
 
   background-color: #34b5aa;
 }
+
+
+.imagenesdk3 img{
+  margin-right: 25px;
+ height: 250px;
+ width: 300px;
+}
+
+
+.imagenesops3 img{
+  margin-right: 25px;
+ height: 250px;
+ width: 300px;
+}
+
+
+.image {
+  width:200px;
+  height:150px;
+  border-radius:100px;
+  border:10px solid rgb(224, 219, 219);
+}
+
+.parrafo{
+  text-align:center;
+  margin-right: 10px;
+  display: inline-block;
+  }
+.company-header{
+display: flex;
+margin-top: 8%;
+}
