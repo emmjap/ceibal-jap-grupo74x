@@ -299,6 +299,7 @@ footer {
   background: #0c0e1a;
   margin: 0 5px;
   padding: 10px 0 0 0;
+  
 }
 
 #menu_extra ul {
@@ -311,6 +312,7 @@ footer {
   margin: 0 5px 0 0;
   padding: 0;
   float:left;
+  display: inline;
 }
 
 #menu_extra ul li a {
@@ -388,3 +390,28 @@ border:none;
 display: flex;
 margin-top: 8%;
 }
+
+#redes-s{
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  display: inline-block;
+  text-align: center;
+}
+
+	#redes-s a:hover {
+		background:#34b5aa; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  }
+  
+  .copyright{
+
+text-align: end;
+padding: 120px;
+
+
+  }
+  #marcas_juegos{
+    float: left;
+    display: inline-block;
+  }
