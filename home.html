@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilos/home.css">
+  <link rel="stylesheet" href="estilos/Iconos_SOCIALES/fonts.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="JavaScript/main.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="contenedor_principal">
+      <div class="contenedor_menu">
+        <div class="logo">
+          <img src="imagenes/icono.png" height="50" width="50" alt="">
+
+        </div>
+        <nav class="menu">
+          <ul>
+
+            <hr>
+            <li><a href="home.html">Inicio</a>
+              <ul>
+                <li><a href="Pagina_de_juegos/Categoria_Juegos.html">Todos Los juegos</a></li>
+              </ul>
+            </li>
+
+
+            <li><a href="#">Soporte Tecnico</a>
+              <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </li>
+            <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="#">Acceder</a>
+              <ul>
+                <!-- <li><a href="Acceder_usuario/login.html">Login</a></li> -->
+                <li><a href="Acceder_usuario/Registrarse.html">Registrarse</a></li>
+                <li> <a href="Acceder_usuario/login.html">Login </a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+  </header>
+
+  <section class="contenedor_slideshow">
+
+    <script src="JavaScript/slideshow.js"></script>
+
+    <div id="slideshow">
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="imagenes/portada3.jpg">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="imagenes/portada1.jpg">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="imagenes/portada2.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <br>
+
+
+  <div id="Contenedor_grid">
+
+    <p class="titulo_h3">Novedades</p>
+
+
+    <section class="Contenedor_Lista">
+
+
+      <div class="imagenes_juegos">
+
+
+
+
+        <a href="Pagina_de_juegos/Ops3.html"><img src="imagenes_juegos\BlackOps\blackops.jpg" /></a>
+
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <div>
+
+          <button onclick="document.getElementById('id01').style.display='block'" class="btn_home">$000</button>
+          <div id="id01" class="modal">
+
+            <form class="modal-content">
+
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <div class="container">
+
+
+                <!-- aqui haces el nuevo formulario  aqui agregas los input donde le pedis al usuario para la compra -->
+
+                <label for="nombre"><b>Nombre</b></label>
+                <input type="text" placeholder="Escriba su nombre" name="nombre" required>
+                <label for="apellido"><b>Apellido</b></label>
+                <input type="text" placeholder="Escriba su apellido" name="apellido" required>
+                <label for="pais"><b>País</b></label>
+                <input type="text" placeholder="Ingrese su país" name="pais" required>
+                <label for="ciudad"><b>Ciudad</b></label>
+                <input type="text" placeholder="Ingrese su ciudad" name="ciudad" required>
+                <label for="codigopostal"><b>Código postal</b></label>
+                <input type="text" placeholder="Ingrese su código postal" name="codigopostal" required>
+                <label for="Calle"><b>Calle</b></label>
+                <input type="text" placeholder="Ingrese su calle" name="calle" required>
+                <label for="pago"><b>Métodos de pago</b></label>
+                <select name="Métodos de pago">
+                  <option value="1">Tarjeta de crédito</option>
+                  <option value="2">Tarjeta de débito </option>
+                  <option value="3">Giro por Abitab </option>
+                </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+
+              <div class="container" style="background-color:#0c202b">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+              </div>
+          </div>
+          <script>
+
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+
+
+          </script>
+
+          <style>
+            /*Estoy acá*/
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* Full-width input fields */
+            input[type=text],
+            input[type=password] {
+              width: 100%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+            }
+
+            /* Set a style for all buttons */
+
+
+
+
+            /* estilos de boton cancelar dentro de la ventana */
+            .cancelbtn {
+              width: auto;
+              padding: 10px 18px;
+              background-color: #6aa5f1;
+            }
+
+            .clistobtn {
+              width: auto;
+              padding: 10px 18px;
+              background-color: limegreen;
+            }
+
+            .container {
+              padding: 16px;
+            }
+
+            span.psw {
+              float: right;
+              padding-top: 16px;
+            }
+
+            /* The Modal (background) */
+            .modal {
+              display: none;
+              /* Hidden by default */
+              position: fixed;
+              /* Stay in place */
+              z-index: 1;
+              /* Sit on top */
+              left: 0;
+              top: 0;
+              width: 100%;
+              /* Full width */
+              height: 100%;
+              /* Full height */
+              overflow: auto;
+              /* Enable scroll if needed */
+              background-color: rgb(0, 0, 0);
+              /* Fallback color */
+              background-color: rgba(0, 0, 0, 0.4);
+              /* Black w/ opacity */
+              padding-top: 60px;
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+              background-color: #fefefe;
+              margin: 5% auto 15% auto;
+              /* 5% from the top, 15% from the bottom and centered */
+              border: 1px solid #888;
+              width: 80%;
+              /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button (x) */
+            .close {
+              position: absolute;
+              right: 25px;
+              top: 0;
+              color: #000;
+              font-size: 35px;
+              font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+              color: red;
+              cursor: pointer;
+            }
+
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+              span.psw {
+                display: block;
+                float: none;
+              }
+
+              .cancelbtn {
+                width: 100%;
+              }
+
+
+              input[type=text],
+              input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-flex;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+              }
+
+              .completar {
+                display: inline-flex;
+              }
+            }
+          </style>
+        </div>
+      </div>
+
+
+
+      <br>
+
+
+      <div class="imagenes_juegos">
+        <!--aca  va la foto principal del juego-->
+
+        <a href="#"><img src="imagenes_juegos\DarkSoul3\857.jpg"></a>
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+
+
+
+
+
+      <br>
+
+
+
+      <div class="imagenes_juegos">
+        <!--aca  va la foto principal del juego-->
+        <a href="#"><img src="Imagenes_juegos/Dishonored 2/861.jpg" alt=""></a>
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+      <br>
+
+
+      <div class="imagenes_juegos">
+        <!--aca  va la foto principal del juego-->
+
+
+        <a href="#"><img src="imagenes_juegos/Fallout4/755.jpg" alt=""></a>
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+      <br>
+      <div class="imagenes_juegos">
+
+
+        <!--aca  va la foto principal del juego-->
+        <a href="#"><img src="imagenes_juegos/Fallout4/755.jpg" alt=""></a>
+
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+
+      </div>
+    </section>
+
+
+    <p class="titulo_h3"> On Sale!</p>
+
+    <section class="Contenedor_Lista">
+      <div class="imagenes_juegos">
+
+
+
+        <a href="Pagina_de_juegos/Ops3.html"> <img src="imagenes_juegos\BlackOps\blackops.jpg" alt=""></a>
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+
+
+
+
+      <div class="imagenes_juegos">
+
+        <!--aca  va la foto principal del juego-->
+        <a href="Pagina_de_juegos/Darksoul3.html"><img src="imagenes_juegos\DarkSoul3\857.jpg"></a>
+
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+
+      </div>
+      <br>
+
+
+
+      <div class="imagenes_juegos">
+        <a href="#"><img src="Imagenes_juegos/Dishonored 2/861.jpg" alt=""></a>
+        <!--aca  va la foto principal del juego-->
+
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+
+        <button class="btn_home">$000</button>
+      </div>
+
+
+
+      <div class="imagenes_juegos">
+
+        <!--aca  va la foto principal del juego-->
+        <a href="#"><img src="imagenes_juegos/Fallout4/755.jpg" alt=""></a>
+
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+
+
+      <div class="imagenes_juegos">
+
+        <!--aca  va la foto principal del juego-->
+        <a href="#"> <img src="imagenes_juegos\RocketLeague\670.jpg" alt=""></a>
+
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+
+
+
+
+
+    </section>
+
+
+    <h3 class="titulo_h3"> ON Free!</h3>
+
+    <section class="Contenedor_Lista">
+
+
+
+
+
+      <div class="imagenes_juegos">
+
+        <a href="#"> <img src="imagenes_juegos\BlackOps\blackops.jpg" alt=""></a>
+
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+
+
+
+
+      <div class="imagenes_juegos">
+
+        <!--aca  va la foto principal del juego-->
+        <a href="#"><img src="imagenes_juegos\DarkSoul3\857.jpg"></a>
+
+
+        </form>
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+
+        <button class="btn_home">$000</button>
+      </div>
+
+
+
+
+      <div class="imagenes_juegos">
+
+        <!--aca  va la foto principal del juego-->
+        <a href="#"><img src="Imagenes_juegos/Dishonored 2/861.jpg"></a>
+        >
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+
+
+
+      <div class="imagenes_juegos">
+
+        <!--aca  va la foto principal del juego-->
+        <a href="#"><img src="imagenes_juegos/Fallout4/755.jpg" alt=""></a>
+        >
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+
+
+      <div class="imagenes_juegos">
+
+        <!--aca  va la foto principal del juego-->
+        <a href=""><img src="imagenes_juegos\RocketLeague\670.jpg "></a>
+
+        <div id="marca_juegos">
+          <span class="icon-Linux"></span>
+          <span class="icon-apple"></span>
+          <span class="icon-android"></span>
+          <span class="icon-windows"></span>
+
+
+        </div>
+        <button class="btn_home">$000</button>
+      </div>
+
+
+
+    </section>
+
+
+
+    <div class="contenido_extra">
+
+      <div id="menu_extra">
+        <ul>
+          <li><a href="#">Noticias</a></li>
+          <li class="seleccionado"><a href="#">Paginas </a></li>
+          <li><a href="#">Pagina 2</a></li>
+
+          <div class="clear"></div>
+      </div>
+
+      <div id="contenido_de_extra">
+
+
+        <div id="principal_extra">
+
+
+          <br><br> <br> <br> <br>
+          <div class="articulo">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam pellentesque enim blandit enim
+              bibendum blandit.
+              Integer eu leo ac est aliquet imperdiet. Quisque nec justo id augue posuere malesuada. Nullam ac metus.
+              Cras non leo
+              ut est placerat condimentum.</p>
+
+            <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
+          </div>
+
+          </div-->
+
+
+
+
+        </div>
+
+      </div>
+
+
+      <footer>
+
+
+
+
+        <section id="redes-s">
+
+          <span class="icon-google"><a href="#">Google +</a></span>
+          <span class="icon-facebook"><a href="#">Facebook</a></span>
+          <span class="icon-instagram"><a href="#">instagram</a></span>
+          <span class="icon-youtube"><a href="#">Youtube</a></span>
+
+
+
+
+
+
+
+
+          <div class="copyright">
+            <p>En el derecho anglosajón se utiliza la
+              noción de copyright (traducido literalmente
+              como 'derecho de copia') que —por
+              lo general— comprende la parte
+              patrimonial de los derechos de autor (derechos patrimoniales). Una obra pasa al dominio público cuando
+              los derechos patrimoniales han expirado.
+
+            </p>
+
+
+          </div>
+    </div>
+
+    </section>
+
+
+    </footer>
+
+
+    </section>
+
+  </div>
+  </div>
+</body>
+
+</html>
