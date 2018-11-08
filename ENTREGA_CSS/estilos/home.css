@@ -231,7 +231,7 @@ min-width: 140px;
 }
 
 /*definicion de tamañanos de las los input tipo boton osea las fotos de los juegos de home*/
-.Contenedor_Lista .imagenes_juegos input[type="image"] {
+.Contenedor_Lista img {
   width: 124px;
   height: 180px;
 }
