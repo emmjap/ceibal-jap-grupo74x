@@ -320,3 +320,8 @@
    height: 250px;
    width: 300px;
 }
+.parrafo{
+  text-align:center;
+  margin-right: 10px;
+  display: inline-block;
+  }
