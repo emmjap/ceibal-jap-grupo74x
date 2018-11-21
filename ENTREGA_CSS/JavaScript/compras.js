@@ -34,6 +34,10 @@ var texEnvio = document.querySelector('#pEnvio');
 var texIVA = document.querySelector('#pIVA');
 var tipoEntrega = document.querySelector('#entrega');
 var tipoJuego = document.querySelector('#formatoJuego')
+var dir1 = document.querySelector('#envioFisicoDir')
+var dir2 = document.querySelector('#envioFisicoPost')
+var dir3 = document.querySelector('#envioFisicoNom')
+var dir4 = document.querySelector('#envioFisicoApe')
 var precioUnidades;
 
 for (let info of baseDeDatos) {
@@ -48,11 +52,20 @@ function enableEnvio(){
   if (tipoJuego.value == 'phys'){
     tipoEntrega.disabled = false;
     texEnvio.hidden = false;
+    dir1.disabled = false;
+    dir2.disabled = false;
+    dir3.disabled = false;
+    dir4.disabled = false;
     precioEnvio();
+
   }
   else {
     tipoEntrega.disabled = true;
-    texEnvio.hidden = true;
+    texEnvio.disabled = true;
+    dir1.disabled = true;
+    dir2.disabled = true;
+    dir3.disabled = true;
+    dir4.disabled = true;
   }
 }
 
@@ -106,6 +119,7 @@ function reducirDecs(numero){
 }
 
 //para que la pagina parezca menos rota, ejecuta las funciones cuando carga.
+window.onload = enableEnvio();
 window.onload = displayPrecio();
 window.onload = calculoUnidades();
 window.onload = calcIVA();
