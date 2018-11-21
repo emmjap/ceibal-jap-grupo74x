@@ -1,0 +1,87 @@
+body{
+	background:url('https://www.tuexperto.com/wp-content/uploads/2017/10/fondo-de-pantalla-paisaje.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+
+h4{
+	color:white;
+}
+
+.icon i{
+	color:white;
+	font-size:120px;
+	cursor:pointer;
+}
+	
+#form{
+	margin: auto;
+	background:#eee;
+	width:380px;
+	display: flex;
+	margin-top:5%;
+	border-radius:5px;
+	box-shadow:0 0 3px 3px white;
+	background:rgba(0,0,0,0.7);
+}
+
+#form #content{
+	margin:20px;
+
+}
+#formu{
+margin-top:-30px;
+}
+
+
+input{
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    outline: 0;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: transparent;
+    height:45px;
+    margin-top:45px;
+    width:340px;
+    border-bottom:2px solid white;	
+    color:white;
+}
+
+input:hover{
+ border-bottom:1px solid white;
+}
+
+
+#form #content button{
+ -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .84rem 2.14rem;
+    font-size: .99rem;
+    -webkit-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin: .375rem;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color:#fff;
+    background-color:#007bff!important;
+    margin-top:40px;
+    width:100%;
+}
