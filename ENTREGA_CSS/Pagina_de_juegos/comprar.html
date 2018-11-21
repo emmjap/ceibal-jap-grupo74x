@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Comprar un juego</title>
+    <link rel="stylesheet" href="../estilos/comprar.css">
+  </head>
+  <body>
+    <div class='container'>
+  <div class='form'>
+  Comprar <br>
+  <select id = 'seleccionJuego' onchange = displayPrecio();calculoUnidades();calcIVA();precioEnvio() > </select>
+
+  <br>
+  <br>
+
+  <input type = number id = 'absoluteUnits' min = 1 value = 1 oninput = calculoUnidades();calcIVA();precioEnvio() >
+
+
+  <select id = 'formatoJuego' oninput = enableEnvio() >
+    <option value = 'digi'> Digital </option>
+    <option value = 'phys'> Fisico </option>
+  </select>
+
+  <select id = 'entrega' disabled oninput = precioEnvio() value = 'comun'>
+    <option value = 'comun'> Comun </option>
+    <option value = 'especial'> Especial </option>
+    <option value = 'premium'> Premium </option>
+  </select>
+
+  </div>
+
+  <div class = 'costos'>
+      <p id = 'pUnidad'>Precio de la Unidad = </p>
+      <p id = 'pTotal'>Total de las Unidades = </p>
+      <p id = 'pIVA'>IVA: </p>
+      <p id = 'pEnvio' hidden>Costo del Envio: </p>
+  </div>
+  </div>
+  <script type="text/javascript" src="../JavaScript/compras.js">
+
+  </script>
+  </body>
+</html>
