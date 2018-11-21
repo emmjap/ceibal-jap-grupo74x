@@ -18,7 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- 
+
   <header>
     <div class="contenedor_principal">
     <div class="contenedor_menu">
@@ -29,7 +29,7 @@
 
        <hr>
 
-       
+
                 <li><a href="home.html">Inicio</a>
                   <ul>
                       <li><a href="Pagina_de_juegos/Categoria_Juegos.html">Todos Los juegos</a></li>
@@ -76,15 +76,15 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  
+
 <br>
 <br>
 
 <div class="container">
-           
+
                                             <br/>
                                             <h2> ofertas </h2>
-                                            
+
                       <div class="grid-container2">
                                               <div class="grid-item2">
 
@@ -92,7 +92,7 @@
                                                     <div class="thumbnail">
                                                             <img src="Imagenes_juegos/DarkSoul3/dark.jpg"  class="img-fluid" alt="New York" >
                                                             <p><strong>New York</strong></p>
-                                                          
+
                                                             <button class="btn">Comprar</button>
                                                           </div>
 
@@ -105,7 +105,7 @@
                                                     <div class="thumbnail">
                                                             <img src="Imagenes_juegos/DarkSoul3/dark.jpg"  class="img-fluid" alt="New York" >
                                                             <p><strong>New York</strong></p>
-                                                          
+
                                                             <button class="btn">Comprar</button>
                                                           </div>
 
@@ -118,7 +118,7 @@
                                                     <div class="thumbnail">
                                                             <img src="./Imagenes_juegos/DarkSoul3/dark.jpg"  class="img-fluid" alt="New York" >
                                                             <p><strong>New York</strong></p>
-                                                          
+
                                                             <button class="btn">Comprar</button>
                                                           </div>
 
@@ -131,7 +131,7 @@
                                                     <div class="thumbnail">
                                                             <img src="./Imagenes_juegos/BlackOps/blackops.jpg"  class="img-fluid" alt="New York" >
                                                             <p><strong>New York</strong></p>
-                                                          
+
                                                             <button class="btn">Comprar</button>
                                                           </div>
 
@@ -140,10 +140,10 @@
                                               </div>
 
                     </div>
-      
+
 
                     <h2> on sale !</h2>
-                                            
+
                     <div class="grid-container2">
                                             <div class="grid-item2">
 
@@ -151,7 +151,7 @@
                                                   <div class="thumbnail">
                                                           <img src="Imagenes_juegos/DarkSoul3/dark.jpg"  class="img-fluid" alt="New York" >
                                                           <p><strong>New York</strong></p>
-                                                        
+
                                                           <button class="btn">Comprar</button>
                                                         </div>
 
@@ -164,7 +164,7 @@
                                                   <div class="thumbnail">
                                                           <img src="Imagenes_juegos/DarkSoul3/dark.jpg"  class="img-fluid" alt="New York" >
                                                           <p><strong>New York</strong></p>
-                                                        
+
                                                           <button class="btn">Comprar</button>
                                                         </div>
 
@@ -177,7 +177,7 @@
                                                   <div class="thumbnail">
                                                           <img src="Imagenes_juegos/DarkSoul3/dark.jpg"  class="img-fluid" alt="New York" >
                                                           <p><strong>New York</strong></p>
-                                                        
+
                                                           <button class="btn">Comprar</button>
                                                         </div>
 
@@ -190,8 +190,10 @@
                                                   <div class="thumbnail">
                                                           <img src="Imagenes_juegos/DarkSoul3/dark.jpg"  class="img-fluid" alt="New York" >
                                                           <p><strong>New York</strong></p>
-                                                        
-                                                          <button class="btn">Comprar</button>
+
+                                                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCompra" onclick > Comprar </button>
+
+
                                                         </div>
 
 
@@ -202,13 +204,72 @@
 
       </div>
 
-    
+      <div class="modal" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Comprar</h5>
+        <div class="modal-body">
+
+                    <select class ='custom-select' id =  'seleccionJuego' onchange = displayPrecio();calculoUnidades();calcIVA();precioEnvio() > </select>
+
+                    <br>
+                    <br>
+
+                <!--    <input type = number id = 'absoluteUnits' min = 1 value = 1 oninput = calculoUnidades();calcIVA();precioEnvio() > -->
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+
+          <div class="input-group input-group-sm">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+    </div>
+    <input type="number" class="form-control" id = 'absoluteUnits' min = 1 value = 1 oninput = calculoUnidades();calcIVA();precioEnvio() aria-label="Unidades" aria-describedby="inputGroup-sizing-sm">
+  </div>
+<br>
+          <select class = 'custom-select' id = 'formatoJuego' oninput = enableEnvio() >
+            <option value = 'digi'> Digital </option>
+            <option value = 'phys'> Fisico </option>
+          </select>
+
+        <br>
+        <br>
+
+          <select class = 'custom-select' id = 'entrega' disabled oninput = precioEnvio() value = 'comun'>
+            <option value = 'comun'> Comun </option>
+            <option value = 'especial'> Especial </option>
+            <option value = 'premium'> Premium </option>
+          </select>
+
+<br>
+
+          <div class = 'costos'>
+              <p id = 'pUnidad'>Precio de la Unidad = </p>
+              <p id = 'pTotal'>Total de las Unidades = </p>
+              <p id = 'pIVA'>IVA: </p>
+              <p id = 'pEnvio' hidden>Costo del Envio: </p>
+          </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <script type="text/javascript" src="JavaScript/compras.js">
 
-      
+  </script>
+
+
 <footer class="container-fluid bg-4 text-center">
-  			
+
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-twitter"></a>
     <a href="#" class="fa fa-google"></a>

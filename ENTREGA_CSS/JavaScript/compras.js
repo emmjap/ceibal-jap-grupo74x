@@ -26,8 +26,8 @@ let baseDeDatos = [
   }
   ]
 
-var units = document.getElementById('absoluteUnits');
-var donSelect = document.getElementById('seleccionJuego');
+var units = document.querySelector('#absoluteUnits');
+var donSelect = document.querySelector('#seleccionJuego');
 var texTotal = document.querySelector('#pTotal');
 var texUnidad = document.querySelector('#pUnidad');
 var texEnvio = document.querySelector('#pEnvio');
