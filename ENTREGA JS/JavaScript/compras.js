@@ -1,27 +1,27 @@
 let baseDeDatos = [
     {
         id: 0,
-        nombre: 'Morrón (Unidad)',
+        nombre: 'Dark Souls 3',
         precio: 200
     },
     {
         id: 1,
-        nombre: 'Cebolla',
+        nombre: 'Dishonored 2',
         precio: 20
     },
     {
         id: 2,
-        nombre: 'Calabacin',
+        nombre: 'Rocket League',
         precio: 2
     },
     {
         id: 3,
-        nombre: 'Fresas',
+        nombre: 'Call of Duty: Black Ops 3',
         precio: 10
     },
   {
     id: 4,
-  nombre: 'Arca de la Alianza',
+  nombre: 'Fallout 4',
   precio: 32222222
   }
   ]
@@ -38,6 +38,8 @@ var dir1 = document.querySelector('#envioFisicoDir')
 var dir2 = document.querySelector('#envioFisicoPost')
 var dir3 = document.querySelector('#envioFisicoNom')
 var dir4 = document.querySelector('#envioFisicoApe')
+var btnCard =
+var btnPagos =
 var precioUnidades;
 
 for (let info of baseDeDatos) {
