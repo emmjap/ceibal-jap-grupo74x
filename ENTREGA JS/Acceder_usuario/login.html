@@ -53,22 +53,12 @@
 			<form action="" class="formulario" name="formulario_registro" method="get">
 				<div>
 					<div class="input-group">
-                            <label class="label" for="nombre">Usuario:</label>
-						<input type="text" id="nombre" name="nombre">
-						
-					</div>
-					<div class="input-group">
-                            <label class="label" for="correo">E-mail:</label>
-						<input type="email" id="correo" name="correo">
-						
-                    </div>
-                    <div class="input-group">
-                            <label class="label" for="pass">Contraseña:</label>
-						<input type="password" id="pass" name="pass">
-						
-					</div>
-                    
-                    <a class="a_Registro" href="Registrarse.html">si todavia no esta registrado click aqui</a>
+                            <input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
+                            <input type="password" name="password" placeholder="Contraseña" class="input-48" required>
+                            <input type="checkbox" name="recordar" id="recordar" value="true">
+                                <label class="label" for="recordar">Recordar sesión</label>
+                                
+                    <a class="a_Registro" href="Registrarse.html">Si aún no está registrado click aquí</a>
                     
 
 					<input type="submit" id="btn-submit" value="Enviar">
