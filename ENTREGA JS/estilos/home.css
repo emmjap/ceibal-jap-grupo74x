@@ -10,7 +10,7 @@ padding:0px;
 html{
 
   margin-right: 40px;
-    margin-left: 40px;
+   
   position: relative;
   top: auto;
  
@@ -235,6 +235,12 @@ min-width: 140px;
   
   padding-top: 70px;
   padding-bottom: 70px;}
+
+
+  .container3{
+    display: flex;
+    
+  }
 
 
   .bg-4 { 
